@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lunch Crunch</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+  <header class="main">
+    <div class="container">
+      <div class="icon-logo" id="logo" alt="the Lunch Crunch app" title="Looking for lunch ideas? Scroll down to start!">
+      </div>
+      <div>
+        <img src="images/munch.png"alt="What to munch for lunch">
+      </div>
+        <div class="icon-pacman">......................................................................... <span class="text">start</span>
+        </div>
+    </div>
+      <div class="fa-stack fa-lg">
+      <a href="#down1" id="down1Button" class="animate-down">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-chevron-down fa-stack-1x fa-inverse"></i>
+      </a>
+      </div>
+  </header>
+
+  <section>
+    <div class="container add" id="down1">
+      <p class="plus">
+        <i class="fa fa-search-plus fa-2x"></i>
+      </p>
+      <p class="title">
+        Add to lunch:
+      </p>
+
+      <form class="search">
+        <span class="input input--minoru">
+          <input  id="input-18" type="text" class="input__field input__field--yoko include" placeholder= "Sandwiches,Italian,bacon" title="Add items you would like to try as well!">
+          <label class="input__label input__label--yoko" for="input-18">
+            <span class="input__label-content input__label-content--yoko">Add what you like! (*required)</span>
+          </label>
+        </span>
+      </form>
+      <div class="icon-pacman pacman">...................................................... <span class="text">next one...</span>
+      </div>
+    </div>
+      <div class="fa-stack fa-lg">
+        <a href="#down2" class="animate-down" id="down2Button">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-chevron-down fa-stack-1x fa-inverse"></i>
+        </a>
+      </div>
+  </section>
+
+  <section class="allergies clearfix" id="down2">
+    <div class="container delete" id="allergies">
+      <p class="minus">
+        <i class="fa fa-search-minus fa-2x"></i>
+      </p>
+      <p class="title">
+        Delete from lunch: 
+      </p>
+      <p class="spam">(Food allergies, sensitivities, SPAM... unless you like SPAM, of course!)
+      </p>
+      <form>
+        <span class="input input--minoru">
+          <input  id="input-18" type="text" class="input__field input__field--yoko exclude" placeholder= "Ham,tuna,eggs,etc..." title="Don't forget to include any allergies or food sensitivities!">
+          <label class="input__label input__label--yoko" for="input-18">
+            <span class="input__label-content input__label-content--yoko">List the items you do NOT want in your lunch</span>
+          </label>
+        </span>
+      </form>
+        <p><input type="submit" value ="Submit" id="submit" class="btn-submit">
+        </p>
+        <div><span class="text" id="error"></span>
+        </div>
+        <div class="fa-stack fa-lg">
+          <a href="#logo" class="animate-down" id="logoButton">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-chevron-up fa-stack-1x fa-inverse"></i>
+          </a>
+        </div>
+    </div>
+  </section>
+
+  <section class="results" id="results">
+    <div class="container">
+      <div class="icon-logo-results animated swing" alt="the Lunch Crunch app" >
+      </div>
+      <div class="icon-pacman nom">....................... <span class='caption'>Results</span>....<span class="text">................................................................nom nom nom nom nom nom nom</span>
+      </div>
+        <ul class="returnedRecipes noMartha">
+        <!-- ... -->
+        </ul>
+          <p class="MarthaWrapper"><input type="submit" value ="What would Martha make" id="Marthasubmit" class="btn-submit">
+          </p>
+        <ul class="returnedRecipes yesMartha">
+        <!-- ... -->
+        </ul>
+    </div>
+  </section>
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/myApp.js"></script>
+  <script src="js/jquery.blockUI.js"></script>
+
+</body>
+</html>
